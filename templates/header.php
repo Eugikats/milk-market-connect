@@ -123,27 +123,27 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="/milk_market/index.php" class="logo">Milk<span>Market</span></a>
+                <a href="index.php" class="logo">Milk<span>Market</span></a>
                 
                 <nav class="nav">
-                    <a href="/milk_market/index.php" class="nav-link <?php echo $current_page === 'index.php' ? 'active' : ''; ?>">Home</a>
-                    <a href="/milk_market/pages/listings.php" class="nav-link <?php echo $current_page === 'listings.php' ? 'active' : ''; ?>">Milk Listings</a>
-                    <a href="/milk_market/pages/privacy_policy.php" class="nav-link <?php echo $current_page === 'privacy_policy.php' ? 'active' : ''; ?>">Privacy Policy</a>
-                    <a href="/milk_market/pages/about_us.php" class="nav-link <?php echo $current_page === 'about_us.php' ? 'active' : ''; ?>">About Us</a>
+                    <a href="index.php" class="nav-link <?php echo $current_page === 'index.php' ? 'active' : ''; ?>">Home</a>
+                    <a href="pages/listings.php" class="nav-link <?php echo $current_page === 'listings.php' ? 'active' : ''; ?>">Milk Listings</a>
+                    <a href="pages/privacy_policy.php" class="nav-link <?php echo $current_page === 'privacy_policy.php' ? 'active' : ''; ?>">Privacy Policy</a>
+                    <a href="pages/about_us.php" class="nav-link <?php echo $current_page === 'about_us.php' ? 'active' : ''; ?>">About Us</a>
                     
                     <?php if (isset($_SESSION['user_id'])): ?>
                         <?php if ($_SESSION['user_role'] === 'farmer'): ?>
-                            <a href="/milk_market/pages/farmer/dashboard.php" class="nav-link">Dashboard</a>
+                            <a href="pages/farmer/dashboard.php" class="nav-link">Dashboard</a>
                         <?php elseif ($_SESSION['user_role'] === 'plant'): ?>
-                            <a href="/milk_market/pages/plant/dashboard.php" class="nav-link">Dashboard</a>
+                            <a href="pages/plant/dashboard.php" class="nav-link">Dashboard</a>
                         <?php elseif ($_SESSION['user_role'] === 'admin'): ?>
-                            <a href="/milk_market/pages/admin/dashboard.php" class="nav-link">Dashboard</a>
+                            <a href="pages/admin/dashboard.php" class="nav-link">Dashboard</a>
                         <?php endif; ?>
-                        <a href="/milk_market/pages/logout.php" class="nav-link">Logout</a>
+                        <a href="pages/logout.php" class="nav-link">Logout</a>
                     <?php else: ?>
                         <div class="auth-buttons">
-                            <a href="./milk_market/pages/login.php" class="btn btn-login">Login</a>
-                            <a href="./milk_market/pages/signup.php" class="btn btn-signup">Sign Up</a>
+                            <a href="pages/login.php" class="btn btn-login">Login</a>
+                            <a href="pages/signup.php" class="btn btn-signup">Sign Up</a>
                         </div>
                     <?php endif; ?>
                 </nav>
