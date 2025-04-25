@@ -1,0 +1,107 @@
+<?php include 'templates/header.php'; ?>
+<body>
+    <!-- Hero section: Full viewport height, gradient overlay on background image, centered content -->
+    <div class="hero">
+        <!-- Container for hero content, padded -->
+        <div class="hero-content">
+            <!-- Logo image: Specific width, margin below -->
+            <img src="images/milk-icon.png" alt="Milk Market Connect Logo" class="logo">
+            <!-- Main heading in hero: Large font size, margin below -->
+            <h1>Milk Market Connect</h1>
+            <!-- Subtitle in hero: Specific font size, margin below -->
+            <p>Connecting Farmers and Processing Plants</p>
+            <!-- Container for Call-to-Action buttons, margin below -->
+            <div class="cta-buttons">
+                <!-- Button styling: Padding, margin, background color, white text, rounded corners, hover effect -->
+                <a href="pages/login.php?role=farmer" class="btn">Farmer Login</a>
+                <!-- Button styling: Padding, margin, background color, white text, rounded corners, hover effect -->
+                <a href="pages/login.php?role=plant" class="btn">Plant Login</a>
+                <!-- Button styling: Padding, margin, background color, white text, rounded corners, hover effect -->
+                <a href="pages/login.php?role=admin" class="btn">Admin Login</a>
+            </div>
+            <!-- Container for secondary links -->
+            <div class="secondary-links">
+                <!-- Secondary link styling: White text, no default underline, white bottom border -->
+                <a href="pages/listings.php">View Milk Listings</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features section: Padded, centered text -->
+    <section class="features">
+        <!-- Features heading: Margin below, specific text color -->
+        <h2>Why Choose Milk Market Connect?</h2>
+        <!-- Grid layout for features: Responsive columns, gap between items, max width, centered -->
+        <div class="features-grid">
+            <!-- Feature card: Padding, light background, rounded corners -->
+            <div class="feature-card">
+                <!-- Feature image: Specific width, margin below -->
+                <img src="images/connect.png" alt="Direct Connection">
+                <h3>Direct Connection</h3>
+                <p>Connect directly with farmers or processing plants without intermediaries</p>
+            </div>
+            <!-- Feature card: Padding, light background, rounded corners -->
+            <div class="feature-card">
+                 <!-- Feature image: Specific width, margin below -->
+                <img src="images/fair_pricing.png" alt="Fair Pricing">
+                <h3>Fair Pricing</h3>
+                <p>Transparent pricing system ensuring fair deals for all parties</p>
+            </div>
+            <!-- Feature card: Padding, light background, rounded corners -->
+            <div class="feature-card">
+                 <!-- Feature image: Specific width, margin below -->
+                <img src="images/Quality.png" alt="Quality Assurance">
+                <h3>Quality Assurance</h3>
+                <p>Verified profiles and quality standards for milk production</p>
+            </div>
+        </div>
+        <!-- Additional paragraph in features section: Centered text, specific font size and color, top margin -->
+        <p style="text-align: center; font-size: 1.2rem; color: #666; margin-top: 20px;">
+            Milk Connect eliminates inefficiencies in Uganda's dairy supply chain by directly connecting farmers with milk processing plants.
+        </p>
+    </section>
+
+    <!-- Testimonials section: Padded, light grey background, centered text -->
+    <section class="testimonials">
+        <!-- Testimonials heading: Margin below, specific text color -->
+        <h2>What Our Users Say</h2>
+        <!-- Grid layout for testimonials: Responsive columns, gap between items, max width, centered -->
+        <div class="testimonials-grid">
+            <!-- Testimonial card: Padding, white background, rounded corners, shadow -->
+            <div class="testimonial-card">
+                <!-- Testimonial image: Specific size, circular shape, margin below -->
+                <img src="images/DennisLukwago.jpeg" alt="Farmer Dennis">
+                <!-- Testimonial quote: Italic style, margin below -->
+                <p>"Omukutu guno gwanguyizza nnyo okufuna ebifo ebyesigika ebirongoosa amata gange."</p>
+                <!-- Testimonial name: Bold font weight, specific text color -->
+                <div class="name">Dennis Lukwago</div>
+                <!-- Testimonial role: Specific text color and smaller font size -->
+                <div class="role">Dairy Farmer</div>
+            </div>
+             <!-- Testimonial card: Padding, white background, rounded corners, shadow -->
+            <div class="testimonial-card">
+                <!-- Testimonial image: Specific size, circular shape, margin below -->
+                <img src="images/EstherNakiwala.jpeg" alt="Plant Manager Esther">
+                <!-- Testimonial quote: Italic style, margin below -->
+                <p>"We've significantly improved our milk sourcing efficiency thanks to Milk Market Connect."</p>
+                 <!-- Testimonial name: Bold font weight, specific text color -->
+                <div class="name">Esther Nakiwala</div>
+                <!-- Testimonial role: Specific text color and smaller font size -->
+                <div class="role">Processing Plant Manager</div>
+            </div>
+             <!-- Testimonial card: Padding, white background, rounded corners, shadow -->
+            <div class="testimonial-card">
+                <!-- Testimonial image: Specific size, circular shape, margin below -->
+                <img src="images/MikeNsubuga.jpeg" alt="Farmer Mike">
+                 <!-- Testimonial quote: Italic style, margin below -->
+                <p>"Sistem mar keto nengo maler konyowa mondo wayudi nengo ma kare mar chak marwa ma nigi ng'ich."</p>
+                 <!-- Testimonial name: Bold font weight, specific text color -->
+                <div class="name">Mike Odong</div>
+                <!-- Testimonial role: Specific text color and smaller font size -->
+                <div class="role">Dairy Farmer</div>
+            </div>
+        </div>
+    </section>
+    <?php include 'templates/footer.php'; ?>
+</body>
+</html>

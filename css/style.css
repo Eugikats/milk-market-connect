@@ -1,0 +1,226 @@
+/* css/style.css */
+
+/* Universal selector: Reset default margin and padding for all elements */
+/* Set box-sizing to border-box for intuitive element sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling: Set default font family and line height */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero {
+    height: 100vh; /* Make hero section take full viewport height */
+    /* Apply a semi-transparent black gradient overlay on top of the background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../images/hero-image.jpg');
+    background-size: cover; /* Ensure background image covers the entire section */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Center text within the hero section */
+    color: white; /* Set default text color to white for contrast */
+}
+
+/* Hero content container styling */
+.hero-content {
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Hero main heading styling */
+.hero-content h1 {
+    font-size: 3em; /* Set large font size */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Hero paragraph/subtitle styling */
+.hero-content p {
+    font-size: 1.2em; /* Set slightly larger font size */
+    margin-bottom: 30px; /* Add significant space below the paragraph */
+}
+
+/* Logo image styling */
+.logo {
+    width: 80px; /* Set specific width for the logo */
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+/* Call-to-action buttons container styling */
+.cta-buttons {
+    margin-bottom: 20px; /* Add space below the buttons container */
+}
+
+/* General button styling */
+.btn {
+    display: inline-block; /* Allow setting width/height/padding */
+    padding: 12px 24px; /* Add padding inside the button */
+    margin: 0 10px; /* Add horizontal margin between buttons */
+    background-color: #4CAF50; /* Set green background color */
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #45a049; /* Slightly darken background on hover */
+}
+
+/* Secondary links in hero section styling */
+.secondary-links a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 1px solid white; /* Add a white bottom border */
+}
+
+/* Features section styling */
+.features {
+    padding: 60px 20px; /* Add vertical and horizontal padding */
+    text-align: center; /* Center text within the section */
+}
+
+/* Features section heading styling */
+.features h2 {
+    margin-bottom: 40px; /* Add space below the heading */
+    color: #333; /* Set dark grey text color */
+}
+
+/* Grid container for features styling */
+.features-grid {
+    display: grid; /* Use CSS Grid for layout */
+    /* Create responsive columns: fit as many 250px+ columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Set gap between grid items */
+    max-width: 1200px; /* Limit maximum width of the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Individual feature card styling */
+.feature-card {
+    padding: 20px; /* Add padding inside the card */
+    background: #f9f9f9; /* Set very light grey background */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+/* Image within a feature card styling */
+.feature-card img {
+    width: 60px; /* Set specific width for the image */
+    margin-bottom: 15px; /* Add space below the image */
+}
+
+/* Testimonials section styling */
+.testimonials {
+    padding: 60px 20px; /* Add vertical and horizontal padding */
+    background: #f5f5f5; /* Set light grey background */
+    text-align: center; /* Center text within the section */
+}
+
+/* Testimonials section heading styling */
+.testimonials h2 {
+    margin-bottom: 40px; /* Add space below the heading */
+    color: #333; /* Set dark grey text color */
+}
+
+/* Grid container for testimonials styling */
+.testimonials-grid {
+    display: grid; /* Use CSS Grid for layout */
+     /* Create responsive columns: fit as many 300px+ columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Set gap between grid items */
+    max-width: 1200px; /* Limit maximum width of the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Individual testimonial card styling */
+.testimonial-card {
+    padding: 20px; /* Add padding inside the card */
+    background: white; /* Set white background */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+/* Image within a testimonial card styling */
+.testimonial-card img {
+    width: 80px; /* Set specific width */
+    height: 80px; /* Set specific height */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px; /* Add space below the image */
+}
+
+/* Paragraph (quote) within a testimonial card styling */
+.testimonial-card p {
+    font-style: italic; /* Italicize the text */
+    margin-bottom: 10px; /* Add space below the paragraph */
+}
+
+/* Name within a testimonial card styling */
+.testimonial-card .name {
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set dark grey text color */
+}
+
+/* Role within a testimonial card styling */
+.testimonial-card .role {
+    color: #666; /* Set grey text color */
+    font-size: 0.9em; /* Set slightly smaller font size */
+}
+
+/* Footer styling */
+footer {
+    background: #333; /* Set dark grey background */
+    color: white; /* Set text color to white */
+    padding: 40px 20px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+/* Footer content container styling */
+.footer-content {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    display: grid; /* Use CSS Grid for layout */
+     /* Create responsive columns: fit as many 200px+ columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px; /* Set gap between grid items */
+}
+
+/* Headings within footer sections styling */
+.footer-section h3 {
+    margin-bottom: 15px; /* Add space below the heading */
+}
+
+/* Unordered lists within footer sections styling */
+.footer-section ul {
+    list-style: none; /* Remove default bullet points */
+}
+
+/* List items within footer sections styling */
+.footer-section ul li {
+    margin-bottom: 8px; /* Add space below each list item */
+}
+
+/* Links within footer sections styling */
+.footer-section a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Link hover effect within footer sections */
+.footer-section a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer bottom section styling (copyright area) */
+.footer-bottom {
+    margin-top: 40px; /* Add space above this section */
+    padding-top: 20px; /* Add padding above the text */
+    /* Add a light top border */
+    border-top: 1px solid rgba(255,255,255,0.1);
+}

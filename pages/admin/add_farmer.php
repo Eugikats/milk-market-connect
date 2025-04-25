@@ -1,0 +1,58 @@
+<?php
+session_start();
+include_once '../../config/db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $location = mysqli_real_escape_string($conn, $_POST['location']);
+    $contact = mysqli_real_escape_string($conn, $_POST['contact']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO farmers (name, email, location, contact, password) 
+            VALUES ('$name', '$email', '$location', '$contact', '$password')";
+    
+    if (mysqli_query($conn, $sql)) {
+        header('Location: dashboard.php');
+        exit;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Farmer</title>
+    <link rel="stylesheet" href="../../css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Farmer</h2>
+        <form method="POST" class="form">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Location:</label>
+                <input type="text" name="location" required>
+            </div>
+            <div class="form-group">
+                <label>Contact:</label>
+                <input type="text" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-primary">Add Farmer</button>
+            <a href="dashboard.php" class="btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html> 

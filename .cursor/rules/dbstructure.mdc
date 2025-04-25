@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Your rule content
+
+Any code related to the database should have the following attributes for their respective entities.
+Key Entities and Their Attributes
+1. Farmers
+•	farmer_id (Primary Key)
+•	name
+•	location
+•	contact
+•	milk_capacity (Liters per day)
+•	preferred_price (Price per liter)
+2. Processing Plants
+•	plant_id (Primary Key)
+•	name
+•	location
+•	contact
+•	processing_capacity (Liters per day)
+3. Orders
+•	order_id (Primary Key)
+•	farmer_id (Foreign Key → Farmers)
+•	plant_id (Foreign Key → Processing Plants)
+•	quantity (Liters)
+•	price_per_liter
+•	status (Pending, Approved, Completed, Cancelled)
+•	timestamp
+4. Payments
+•	payment_id (Primary Key)
+•	order_id (Foreign Key → Orders)
+•	amount
+•	payment_method (Mobile Money, Bank Transfer, Cash)
+•	status (Successful, Pending, Failed)
+•	timestamp
+5. Price Listings
+•	listing_id (Primary Key)
+•	farmer_id (Foreign Key → Farmers)
+•	price_per_liter
+•	valid_until (Expiration date)
+•	status (Active, Expired)
+
+- You can @ files here
+- You can use markdown but dont have to
